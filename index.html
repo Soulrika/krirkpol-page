@@ -1,1 +1,88 @@
-Hello Github
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krirkpol | Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Krirkpol</h1>
+          <p class="lead">
+            ฉันเป็นผู้ที่ชื่นชอบการสร้างเว็บไซต์และพัฒนาแนวคิดให้กลายเป็นสิ่งที่ใช้งานได้จริง
+            ด้วยความสนใจด้าน UI, Frontend และการเรียนรู้เทคโนโลยีใหม่ ๆ อยู่เสมอ
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">ติดต่อฉัน</a>
+            <a class="btn btn-secondary" href="#projects">ดูผลงาน</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="grid">
+        <article class="card">
+          <h2>ระบบ Check-in ด้วย GPS</h2>
+          <p>ทดสอบการ check-in จากตำแหน่งปัจจุบันของคุณโดยไม่ต้องใช้เซิร์ฟเวอร์หรือฐานข้อมูล</p>
+          <form id="checkin-form" class="checkin-form">
+            <input id="checkin-name" type="text" placeholder="ชื่อผู้เช็คอิน" required />
+            <button id="checkin-button" type="submit">Check-in ด้วย GPS</button>
+          </form>
+          <div id="checkin-status" class="status">พร้อมใช้งาน</div>
+        </article>
+        <article class="card">
+          <h2>ประวัติ check-in</h2>
+          <div id="checkin-history" class="history-list"></div>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h2>เกี่ยวกับฉัน</h2>
+          <p>
+            ฉันสนใจในการออกแบบและพัฒนาเว็บที่ทั้งสวยงามและใช้งานง่าย
+            พร้อมเรียนรู้และทดลองสิ่งใหม่ ๆ เพื่อพัฒนาทักษะอย่างต่อเนื่อง
+          </p>
+        </article>
+        <article class="card">
+          <h2>ทักษะ</h2>
+          <ul class="pill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>UI/UX Basics</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects">
+        <h2>ผลงาน / ความสนใจ</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>เว็บแนะนำตัว</h3>
+            <p>สร้างหน้าเว็บสั้น ๆ ที่แสดงตัวตนและความสนใจในรูปแบบที่น่าจดจำ</p>
+          </article>
+          <article class="card">
+            <h3>Frontend Development</h3>
+            <p>สนใจในการสร้างหน้าเว็บไซต์ที่ตอบโจทย์ผู้ใช้และมองเห็นความสวยงามได้ทันที</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="card">
+          <h2>ติดต่อ</h2>
+          <p>Email: krirkpol@example.com</p>
+          <p>GitHub: github.com/krirkpol</p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
